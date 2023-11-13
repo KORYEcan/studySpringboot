@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${lastName}">lastName</h1>
+<h1>[[${firstName}]]</h1>
+
+<h1 th:text="'My name is'+${lastName}+','+${firstName}">My name is LastName firstName</h1>
+<h1 th:text="|My name is ${lastName}, ${firstName} |">My name is LastName firstName</h1>
+
+<span th:text="${'<i> Ban , Ye </i>'}"></span>
+<span th:utext="${'<i> Ban , Ye </i>'}"></span>
+</body>
+</html>
